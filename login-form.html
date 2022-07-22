@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <script src="https://kit.fontawesome.com/e5a729fcbb.js" crossorigin="anonymous"></script>
+
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            font-size: 2em;
+        }
+        header a {
+            text-decoration: none;
+            color: black;
+            margin-right: 15px;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 125px;
+
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .login-form input {
+            margin: 1em;
+            font-size: 1.5em;
+            padding: 5px 10px;
+        }
+
+        .login-form input[type="submit"] {
+            background-color: goldenrod;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+       <nav>
+            <span>
+                <a href="#">Home</a>
+                <a href="#">Dashboard</a>
+                <a href="#">Inventory</a>
+                <a href="#">News</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+            </span>
+       </nav>
+    </header>
+    <section class="login-container">
+        <form class="login-form">
+            <h2>Please Login</h2>
+            <input type="email" placeholder="example@email.com" required>
+            <input type="password" required placeholder="Enter Password">
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+
+</html>
